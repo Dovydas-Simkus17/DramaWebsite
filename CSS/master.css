@@ -1,0 +1,116 @@
+/*Website*/
+body {
+    background-color: lightblue;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    font-family:"Luminari", fantasy;
+    color: white;
+    margin-left: 20px;
+}
+header{
+    background-color: CBC3E3;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+h1{
+    font-size: 36px;
+}
+h3{
+    font-size: 22px;
+}
+p{
+    font-size: 16px;
+}
+
+main{
+    background-color: #CBC3E3;
+    border-radius: 10px;
+}
+aside{
+    border-radius: 10px;
+    background-color: #CBC3E3;
+
+}
+footer{
+    border-radius: 10px;
+    background-color: lightcyan;
+}
+/* Nav bar*/
+.active{
+    background-color: darkcyan;
+}
+nav li{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: lightcyan;
+    list-style-type: None;
+}
+nav li a{
+    color: #CBC3E3;
+    text-align: center;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: #8f8aa0;
+}
+/* Index Page*/
+#mainPara {
+    margin-left: 20px;
+}
+/* Img Gallery Page*/
+
+  .blurryImg{
+    width:500px;
+    height:500px;
+    transition: filter 2s,-webkit-filter 2s,opacity 2s;
+  }
+  
+  .box{
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 15px;
+  }
+  
+  .box:hover img{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    opacity: 0.6;
+  }
+  
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    opacity: 0;
+    transition: opacity 1.5s, visibility 1.5s;
+  }
+  
+  .box:hover .text{
+    opacity: 1;
+  }
+/*Table */
+
+table{
+    font-family: "Luminari", fantasy;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F0F0F0;
+}
+
+table tr:nth-child(even){
+    background-color: #F2F2F2;
+}
+table tr:hover{
+    background-color: #8f8aa0;
+}
+table th{
+    background-color: lightcyan;
+    color: #CBC3E3;
+}
