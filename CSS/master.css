@@ -35,6 +35,14 @@ footer{
     border-radius: 10px;
     background-color: lightcyan;
 }
+#logo{
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-top: 5px;
+    margin-left:10px;
+    margin-right: 10px;
+}
 /* Nav bar*/
 .active{
     background-color: darkcyan;
@@ -113,4 +121,16 @@ table tr:hover{
 table th{
     background-color: lightcyan;
     color: #CBC3E3;
+}
+/* Contact Us Page */
+form{
+    margin-left: 20px;
+    width:30%;
+}
+#left-col{
+    display: inline;
+    float: left;
+}
+#right-col{
+    display: inline;
 }
