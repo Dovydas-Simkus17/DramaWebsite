@@ -184,24 +184,27 @@ fieldset{
 }
 /* Past Members Page*/
 .graveyard{
+    position: relative;
     margin:auto;
     height: 500px;
-    width: 50%;
+    width: 100%;
 }
-.shape1{
+.grave{
+    height:100px; 
+    width: 100px;
+}
+.shape{
     position: absolute;
     top: 57%;
-    left: 8.3%;
+    left: calc(8.3%);
     height: 100px;
     width: 80px;
-    border-top-left-radius: 60%;
-    border-top-right-radius: 60%;
-    opacity: 0.7;
-    background-color: #3d9970;
-  }
+    opacity: 1;
+}
+
 .textBox{
     position: absolute;
-    top: 47%;
+    top: 17%;
     left: 10%;
     height: 100px;
     width: 80px;
@@ -210,16 +213,15 @@ fieldset{
 }
 
 /* COPY AND PASTE CODE*/
-.shape1:hover .bubble{
-    opacity: 0;
-}
+
 .bubble {
 	position: absolute;
-    top: 0%;
-    left: 8.3%;
-    height: 100px;
+    top: -240%;
+    left: 20%;
+    height: 80px;
     width: 80px;
 	min-width: 200px;
+    min-height: 180px;
 	background: ivory;
 	margin: 0 auto;
 	border-radius: 20px;
@@ -227,7 +229,7 @@ fieldset{
 	font-size: 200px;
 	text-align: center;
 
-    opacity: 1;
+    opacity: 0;
     transition: opacity 1.5s, visibility 1.5s;
 }
 
@@ -251,4 +253,7 @@ fieldset{
 	top: -315px;
 /* 	transform: scale(1.05); */
 	z-index: -1;
+}
+.shape:hover .bubble{
+    opacity: 1;
 }
